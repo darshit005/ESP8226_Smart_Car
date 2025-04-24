@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="240dp"
+    android:height="240dp"
+    android:viewportWidth="240"
+    android:viewportHeight="240">
+    
+    <!-- Small star -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20,20 L22,20 L21,18 Z"
+        android:fillAlpha="0.8" />
+    
+    <!-- Medium star -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,40 L63,40 L61.5,37 Z"
+        android:fillAlpha="0.7" />
+    
+    <!-- Tiny star -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M100,70 L101,70 L100.5,69 Z"
+        android:fillAlpha="0.6" />
+    
+    <!-- Medium star -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M150,30 L153,30 L151.5,27 Z"
+        android:fillAlpha="0.9" />
+    
+    <!-- Small star -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M200,50 L202,50 L201,48 Z"
+        android:fillAlpha="0.7" />
+    
+    <!-- Tiny star -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,100 L31,100 L30.5,99 Z"
+        android:fillAlpha="0.5" />
+    
+    <!-- Small star -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M80,120 L82,120 L81,118 Z"
+        android:fillAlpha="0.8" />
+    
+    <!-- Medium star -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M130,90 L133,90 L131.5,87 Z"
+        android:fillAlpha="0.7" />
+    
+    <!-- Tiny star -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M180,110 L181,110 L180.5,109 Z"
+        android:fillAlpha="0.6" />
+    
+    <!-- Small star -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M220,130 L222,130 L221,128 Z"
+        android:fillAlpha="0.9" />
+    
+    <!-- Medium star -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,170 L43,170 L41.5,167 Z"
+        android:fillAlpha="0.7" />
+    
+    <!-- Tiny star -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M90,190 L91,190 L90.5,189 Z"
+        android:fillAlpha="0.5" />
+    
+    <!-- Small star -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M140,160 L142,160 L141,158 Z"
+        android:fillAlpha="0.8" />
+    
+    <!-- Medium star -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M190,180 L193,180 L191.5,177 Z"
+        android:fillAlpha="0.7" />
+    
+    <!-- Tiny star -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M10,210 L11,210 L10.5,209 Z"
+        android:fillAlpha="0.6" />
+</vector> 

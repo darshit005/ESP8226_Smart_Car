@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/animated_background"
+    android:padding="16dp">
+
+    <!-- Particles Overlay -->
+    <ImageView
+        android:id="@+id/particlesOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/particles_overlay"
+        android:scaleType="fitXY" />
+
+    <!-- Top Status Bar Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/statusCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="#661A237E"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Connection Status Text -->
+            <TextView
+                android:id="@+id/textConnectionStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Status: Disconnected"
+                android:textColor="#F44336"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Connect Button -->
+            <Button
+                android:id="@+id/buttonConnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_neon"
+                android:fontFamily="sans-serif-medium"
+                android:paddingVertical="12dp"
+                android:text="Connect"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Controls Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/controlsCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statusCard"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#661A237E"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="12dp">
+
+        <!-- Toggle Buttons -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:id="@+id/toggleLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/toggleJoystick"
+                    android:layout_width="110dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/toggle_3d_selector"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingHorizontal="8dp"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textOff="JOYSTICK"
+                    android:textOn="JOYSTICK"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/toggleGyro"
+                    android:layout_width="110dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/toggle_3d_selector"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingHorizontal="8dp"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textOff="GYRO"
+                    android:textOn="GYRO"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/toggleVoice"
+                    android:layout_width="110dp"
+                    android:layout_height="65dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/toggle_3d_selector"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingHorizontal="8dp"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textOff="VOICE"
+                    android:textOn="VOICE"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                    
+                <ToggleButton
+                    android:id="@+id/toggleObstacleAvoidance"
+                    android:layout_width="110dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/toggle_3d_selector"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingHorizontal="8dp"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textOff="OBSTACLE"
+                    android:textOn="OBSTACLE"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Control Interfaces Container -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/interfacesCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/controlsCard"
+        android:layout_above="@id/bottomControlsCard"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="#661A237E"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="12dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Joystick View -->
+                <LinearLayout
+                    android:id="@+id/joystickSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    
+                    <!-- Title for Joystick -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="JOYSTICK CONTROL"
+                        android:textColor="#4FC3F7"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    
+                    <FrameLayout
+                        android:id="@+id/joystickLayout"
+                        android:layout_width="240dp"
+                        android:layout_height="240dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="4dp">
+
+                        <ImageView
+                            android:id="@+id/joystickBase"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/joystick_outer" />
+
+                        <ImageView
+                            android:id="@+id/joystickKnob"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:elevation="8dp"
+                            android:src="@drawable/joystick_knob" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:layout_marginVertical="16dp"
+                    android:background="#334FC3F7" />
+
+                <!-- Gyroscope View -->
+                <LinearLayout
+                    android:id="@+id/gyroSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    
+                    <!-- Title for Gyroscope -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="GYROSCOPE CONTROL"
+                        android:textColor="#B39DDB"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    
+                    <RelativeLayout
+                        android:id="@+id/gyroView"
+                        android:layout_width="240dp"
+                        android:layout_height="240dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/gyro_circle_bg"
+                        android:elevation="4dp">
+
+                        <View
+                            android:id="@+id/gyroDot"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/gyro_dot"
+                            android:elevation="8dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Bottom Control Buttons Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottomControlsCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="#661A237E"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="12dp">
+
+        <LinearLayout
+            android:id="@+id/bottomControls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <!-- Return to Home -->
+            <Button
+                android:id="@+id/buttonReturnHome"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_neon"
+                android:fontFamily="sans-serif-medium"
+                android:text="Return Home"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp" />
+
+            <!-- Reset -->
+            <Button
+                android:id="@+id/buttonReset"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_neon"
+                android:fontFamily="sans-serif-medium"
+                android:text="Reset"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <!-- Voice Button -->
+            <ImageButton
+                android:id="@+id/buttonVoice"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_neon"
+                android:contentDescription="Voice Command"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_mic"
+                app:tint="#FFFFFF" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

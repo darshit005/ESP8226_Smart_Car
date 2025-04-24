@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Background gradient -->
+    <path
+        android:pathData="M0,0h108v108h-108z"
+        android:fillColor="#0A0E21"/>
+    
+    <!-- Glowing circular background -->
+    <path
+        android:pathData="M54,54m-40,0a40,40 0,1 1,80 0a40,40 0,1 1,-80 0"
+        android:fillColor="#1A237E" />
+    
+    <!-- Light reflections -->
+    <path
+        android:pathData="M35,35m-28,0a28,28 0,1 1,56 0a28,28 0,1 1,-56 0"
+        android:fillColor="#3949AB"
+        android:fillAlpha="0.3" />
+        
+    <!-- Car body shadow -->
+    <path
+        android:pathData="M38,65.5C38,65.5 39,75 54,75C69,75 70,65.5 70,65.5L73,58L73,56L69,48C69,48 65,41 54,41C43,41 39,48 39,48L35,56L35,58L38,65.5Z"
+        android:fillColor="#000000"
+        android:fillAlpha="0.3" />
+    
+    <!-- Car body main -->
+    <path
+        android:pathData="M36,64C36,64 37,73 54,73C71,73 72,64 72,64L75,56L75,54L71,46C71,46 67,39 54,39C41,39 37,46 37,46L33,54L33,56L36,64Z"
+        android:fillColor="#1E88E5" />
+    
+    <!-- Car body highlights -->
+    <path
+        android:pathData="M36,62C36,62 37,71 54,71C71,71 72,62 72,62L75,54L75,52L71,44C71,44 67,37 54,37C41,37 37,44 37,44L33,52L33,54L36,62Z"
+        android:fillColor="#42A5F5"
+        android:fillAlpha="0.5" />
+        
+    <!-- Car roof -->
+    <path
+        android:pathData="M44,52 L44,44 C44,44 47,39 54,39 C61,39 64,44 64,44 L64,52 L44,52Z"
+        android:fillColor="#0D47A1" />
+    
+    <!-- Car roof highlight -->
+    <path
+        android:pathData="M44,50 L44,44 C44,44 47,39 54,39 C61,39 64,44 64,44 L64,50 L44,50Z"
+        android:fillColor="#1565C0"
+        android:fillAlpha="0.8" />
+    
+    <!-- Front headlight glow -->
+    <path
+        android:pathData="M38,51m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"
+        android:fillColor="#FFECB3" />
+    
+    <!-- Front headlight -->
+    <path
+        android:pathData="M37,51m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"
+        android:fillColor="#FFFFFF" />
+        
+    <!-- Rear light glow -->
+    <path
+        android:pathData="M71,51m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"
+        android:fillColor="#FFCDD2" />
+    
+    <!-- Rear light -->
+    <path
+        android:pathData="M70,51m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"
+        android:fillColor="#F44336" />
+    
+    <!-- Window -->
+    <path
+        android:pathData="M46,50 L46,45 C46,45 48,41 54,41 C60,41 62,45 62,45 L62,50 L46,50Z"
+        android:fillColor="#90CAF9"
+        android:fillAlpha="0.7" />
+    
+    <!-- Front wheel shadow -->
+    <path
+        android:pathData="M42,58m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0"
+        android:fillColor="#000000"
+        android:fillAlpha="0.3" />
+    
+    <!-- Front wheel -->
+    <path
+        android:pathData="M41,57m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0"
+        android:fillColor="#424242" />
+    
+    <!-- Front wheel rim -->
+    <path
+        android:pathData="M41,57m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"
+        android:fillColor="#9E9E9E" />
+    
+    <!-- Rear wheel shadow -->
+    <path
+        android:pathData="M67,58m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0"
+        android:fillColor="#000000"
+        android:fillAlpha="0.3" />
+    
+    <!-- Rear wheel -->
+    <path
+        android:pathData="M66,57m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0"
+        android:fillColor="#424242" />
+    
+    <!-- Rear wheel rim -->
+    <path
+        android:pathData="M66,57m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"
+        android:fillColor="#9E9E9E" />
+    
+    <!-- Light reflection 1 on car body -->
+    <path
+        android:pathData="M40,46c0,0 10,-4 25,-2c0,0 -7,-3 -13,-3C52,41 44,42 40,46z"
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.3" />
+    
+    <!-- Light reflection 2 on car roof -->
+    <path
+        android:pathData="M46,44c0,0 3,-2 8,-2c0,0 -1,-1 -2,-1C52,41 48,41 46,44z"
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.3" />
+    
+    <!-- Outer glow effect -->
+    <path
+        android:pathData="M54,54m-44,0a44,44 0,1 1,88 0a44,44 0,1 1,-88 0"
+        android:fillColor="#4FC3F7"
+        android:fillAlpha="0.1" />
+</vector> 

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="240dp"
+    android:height="240dp"
+    android:viewportWidth="240"
+    android:viewportHeight="240">
+    
+    <!-- Glowing particle 1 -->
+    <path
+        android:fillColor="#00B8FF"
+        android:pathData="M30,40 C32,40 32,42 30,42 C28,42 28,40 30,40 Z"
+        android:fillAlpha="0.6" />
+    
+    <!-- Glowing particle 2 -->
+    <path
+        android:fillColor="#7C4DFF"
+        android:pathData="M80,60 C83,60 83,63 80,63 C77,63 77,60 80,60 Z"
+        android:fillAlpha="0.5" />
+    
+    <!-- Glowing particle 3 -->
+    <path
+        android:fillColor="#00B8FF"
+        android:pathData="M150,30 C151,30 151,31 150,31 C149,31 149,30 150,30 Z"
+        android:fillAlpha="0.7" />
+    
+    <!-- Glowing particle 4 -->
+    <path
+        android:fillColor="#B388FF"
+        android:pathData="M190,50 C192,50 192,52 190,52 C188,52 188,50 190,50 Z"
+        android:fillAlpha="0.4" />
+    
+    <!-- Glowing particle 5 -->
+    <path
+        android:fillColor="#00B8FF"
+        android:pathData="M40,120 C42,120 42,122 40,122 C38,122 38,120 40,120 Z"
+        android:fillAlpha="0.5" />
+    
+    <!-- Glowing particle 6 -->
+    <path
+        android:fillColor="#7C4DFF"
+        android:pathData="M100,100 C101,100 101,101 100,101 C99,101 99,100 100,100 Z"
+        android:fillAlpha="0.7" />
+    
+    <!-- Glowing particle 7 -->
+    <path
+        android:fillColor="#00B8FF"
+        android:pathData="M170,110 C172,110 172,112 170,112 C168,112 168,110 170,110 Z"
+        android:fillAlpha="0.6" />
+    
+    <!-- Glowing particle 8 -->
+    <path
+        android:fillColor="#B388FF"
+        android:pathData="M220,90 C222,90 222,92 220,92 C218,92 218,90 220,90 Z"
+        android:fillAlpha="0.5" />
+    
+    <!-- Glowing particle 9 -->
+    <path
+        android:fillColor="#00B8FF"
+        android:pathData="M50,170 C51,170 51,171 50,171 C49,171 49,170 50,170 Z"
+        android:fillAlpha="0.7" />
+    
+    <!-- Glowing particle 10 -->
+    <path
+        android:fillColor="#7C4DFF"
+        android:pathData="M120,180 C123,180 123,183 120,183 C117,183 117,180 120,180 Z"
+        android:fillAlpha="0.4" />
+    
+    <!-- Glowing particle 11 -->
+    <path
+        android:fillColor="#00B8FF"
+        android:pathData="M180,150 C181,150 181,151 180,151 C179,151 179,150 180,150 Z"
+        android:fillAlpha="0.6" />
+    
+    <!-- Glowing particle 12 -->
+    <path
+        android:fillColor="#B388FF"
+        android:pathData="M210,190 C213,190 213,193 210,193 C207,193 207,190 210,190 Z"
+        android:fillAlpha="0.5" />
+</vector> 

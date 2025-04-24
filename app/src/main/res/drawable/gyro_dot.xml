@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#44000000" />
+            <size android:width="24dp" android:height="24dp" />
+        </shape>
+    </item>
+    
+    <!-- Main dot with 3D gradient -->
+    <item android:bottom="2dp" android:right="1.5dp" android:left="0.5dp" android:top="0.5dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:centerX="0.35"
+                android:centerY="0.35"
+                android:gradientRadius="12dp"
+                android:startColor="#FFEB3B"
+                android:centerColor="#FFA000"
+                android:endColor="#FF6F00" />
+            <stroke android:width="1.5dp" android:color="#FFECB3" />
+        </shape>
+    </item>
+    
+    <!-- Highlight effect -->
+    <item android:left="5dp" android:top="3dp" android:right="10dp" android:bottom="12dp">
+        <shape android:shape="oval">
+            <solid android:color="#55FFFFFF" />
+        </shape>
+    </item>
+</layer-list>
